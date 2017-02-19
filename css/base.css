@@ -1,0 +1,170 @@
+/* css初始化 */
+@charset "utf-8";
+*{
+	padding: 0;
+	margin: 0;
+	text-decoration: none;
+	font-family: "Microsoft Yahei";
+}
+
+fieldset,img,input,button{
+	border: none;
+	outline-style: none;
+}
+ul,ol{
+	list-style: none;
+}
+i{
+	font-style: normal;
+	font-size: 0;
+}
+/*input{
+	padding-top: 0;
+	padding-bottom: 0;
+	font-family: "simsun"，"宋体"；
+}*/
+select,input{
+	vertical-align: middle;
+}
+select,input,textarea{
+	font-size: 12px;
+}
+textarea{
+	resize: none;/*防止拖动*/
+}
+dl{
+	display: block;
+}
+img{
+	top: 0;
+	border: 0;
+	vertical-align: middle;
+}
+table{
+	border-collapse: collapse;
+}
+body{
+	font: 12px/150% Arial,verdana,"\5b8b\4f53";
+	color: #666;
+	background-color: rgb(246,246,246);
+}
+a{
+	color: #666;
+	text-decoration: none;
+}
+a:hover{
+	color: #db192a;
+}
+.warp{
+	width: 1190px;
+	margin: 0 auto;	
+}
+.fl{
+	float: left;
+}
+.fr{
+	float: right;
+}
+.head{
+	height: 170px;
+}
+.head a{
+	color: #888;	
+	height: 170px;
+}
+.head a:hover{
+	color: #db192a;	
+}
+.head_top{
+	height: 29px;
+	line-height: 30px;
+	border-bottom: 1px solid #ddd;
+	background-color: rgb(227,228,229);
+}
+.head_main{
+	height: 100px;
+	font-family: "Microsoft Yahei";
+}
+.head_top a{
+	width: 20px;
+	text-decoration: none;
+	padding: 0 10px;
+}
+.city{
+	width: 56px;
+	background: url(../images/img2.png) left center no-repeat;
+	margin-left: 10px;
+	padding-left: 5px;
+}
+.searchBox{
+	height: 35px;
+	margin: 25px 0 0 130px;
+}
+.search_text{
+	float: left;
+	width: 490px;
+	height: 33px;
+	padding: 0 4px;
+	border: 1px solid rgb(241,2,21);
+	color: #666;
+	font: 14px/33px;
+}
+.search_submit{
+	float: left;
+	background: url(../images/search.png);width: 50px;height: 35px;
+	cursor: pointer;
+}
+.shopCart{
+	width: 122px;
+	height: 33px;
+	line-height: 33px;
+	padding-left: 76px;
+	border: 1px solid #e3e4e5;
+	margin: 25px 0 0 31px;
+	background-color: #fff;
+	position: relative;
+}
+.shopCart a{
+	color: #f10215;
+}
+.shopCart_icon1{
+	position: absolute;
+	background: url(../images/shopcart.png) no-repeat;width: 16px;height: 16px;
+	top: 7px;
+	left: 53px;
+}
+.shopCart_icon2{
+	position: absolute;
+	width: 14px;
+	height: 14px;
+	line-height: 14px;
+	background-color: #f10215;
+	color: #fff;
+	top: 5px;
+	left: 140px;
+	border-radius: 50%;
+	text-align: center;
+}
+/*.shopCart_icon3{
+	background: url(../images/shopCart_icon3);width: 66px;height: 66px;
+	float: right;
+	background-color: red;
+	width: 40px;
+	height: 30px;
+}*/
+.hotSearch{
+	width: 550px;
+	padding-top: 9px;
+	margin-left: 130px;
+}
+.hotSearch a{
+	padding-right: 12px;
+	color: #999;
+}
+.hotSearch a:first-child{
+	color:#f10215;
+}
+.head_bottom{
+	width: 100%;
+	height: 40px;
+}
