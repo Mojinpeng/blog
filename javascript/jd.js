@@ -1,10 +1,10 @@
 window.onload=function(){
-	//轮播图小点样式控制
-	function change(){
 		var oScroll=document.getElementById("scroll");	
 		var oUl=oScroll.getElementsByTagName('ul');
 		var lis=document.getElementById('slider_list').getElementsByTagName('li');
 		var cir=oScroll.getElementsByTagName('i');
+	//轮播图小点样式控制
+	function change(){
 		var timer=null;
 			for (var i = 0; i < cir.length; i++) {
 				cir[i].onmouseover=function(num){
@@ -20,7 +20,7 @@ window.onload=function(){
 					cir[num].setAttribute("class","circle circle_active");
 					lis[num].style.zIndex=1;
 					move(lis[num],{opacity:100});
-						},200)
+						},300)
 						
 				}
 			}(i);
@@ -37,7 +37,7 @@ window.onload=function(){
 				input.value=oldValue;
 			}
 
-	//侧边导航栏
+	//侧边导航栏(只是做一个演示，item只写两个，所以鼠标放入后面的goods中时会报错)
 	function openlist(){
 		var goods=document.getElementById("main_col1").getElementsByTagName('li');
 		var submenu=document.getElementById("submenu");
@@ -79,7 +79,7 @@ window.onload=function(){
 				// newsBox[index].setAttribute("class","news_content_item");
 		}
 	}
-	//添加雪碧图
+	//添加雪碧图(京东上的雪碧图是乱的，所以我自己扣下来做了一个)
 	news();
 	function sprite(){
 		var icon=document.getElementById("service_list").getElementsByTagName("i");
@@ -118,7 +118,8 @@ window.onload=function(){
 		clearInterval(timer);
 	}
 	play();
-	function Arrow(num){		
+	function Arrow(num){
+	
 		var next=document.getElementById('next');
 		var prev=document.getElementById('prev');
 		index+=num;
